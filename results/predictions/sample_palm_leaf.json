@@ -1,0 +1,39 @@
+{
+  "filename": "sample_palm_leaf.png",
+  "image_width": 2048,
+  "image_height": 834,
+  "skew_angle_deg": 1.5,
+  "num_regions": 3,
+  "regions": [
+    {
+      "bbox": [
+        578,
+        4,
+        1466,
+        73
+      ],
+      "label": "filler",
+      "confidence": 0.85
+    },
+    {
+      "bbox": [
+        192,
+        85,
+        1741,
+        684
+      ],
+      "label": "main_text",
+      "confidence": 0.9
+    },
+    {
+      "bbox": [
+        550,
+        763,
+        1495,
+        832
+      ],
+      "label": "filler",
+      "confidence": 0.85
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "filename": "sample_paper.png",
+  "image_width": 2047,
+  "image_height": 774,
+  "skew_angle_deg": -0.5,
+  "num_regions": 3,
+  "regions": [
+    {
+      "bbox": [
+        591,
+        18,
+        1454,
+        62
+      ],
+      "label": "filler",
+      "confidence": 0.821
+    },
+    {
+      "bbox": [
+        243,
+        94,
+        1982,
+        712
+      ],
+      "label": "main_text",
+      "confidence": 0.9
+    },
+    {
+      "bbox": [
+        563,
+        717,
+        1518,
+        761
+      ],
+      "label": "filler",
+      "confidence": 0.826
+    }
+  ]
+}
