@@ -71,17 +71,4 @@ Corrupted files are reported and skipped; a summary of successes/failures is pri
 }
 ```
 
-## Limitations (honest notes)
-- Rules, not learning: no accuracy metrics. Tested on the two sample pages from the assignment (palm leaf and paper)
-  plus synthetic pages. On the samples it finds the body and the English watermark lines (`filler`); header/footer/side_text
-  were verified only on synthetic pages, not on real manuscripts with those regions.
-- Handwritten lines that touch (common in palm-leaf) merge into one body block, so lines are not separated and
-  multi-column splitting only works when an empty vertical band crosses the whole block.
-- "English text / pencil" is inferred from letter size, stroke thickness and ink contrast, which can mislabel small
-  real headers/footers with thin pens, or dark pencil.
-- Palm-leaf body boxes can include scribe-line ends and leaf-edge shadows; heavy damage/stains may add false blocks.
-- Confidence values are heuristic.
 
-## Future improvements
-Labelled data and a trained detector (e.g. YOLO/LayoutParser) for classification; text-line segmentation tuned for
-touching handwriting; script/Latin text classifier for English detection; per-class evaluation (IoU, mAP).
